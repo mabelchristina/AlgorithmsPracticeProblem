@@ -39,7 +39,14 @@ namespace AlgorithmsPractice
                             Console.WriteLine("the word {0} is not found", word);
                         }
                         break;
-
+                    case 3:
+                        string filepathins = @"D:\my git\AlgorithmsPracticeProblem\AlgorithmsPractice\Words.txt";
+                        string sort = File.ReadAllText(filepathins);
+                        string[] sortArray = sort.Split(" ");
+                        InsertionSort insertionSort = new InsertionSort();
+                        insertionSort.Sort(sortArray);
+                        insertionSort.Display(sortArray);
+                        break;
                     default:
                         Console.WriteLine("Exit");
                         break;
