@@ -11,7 +11,7 @@ namespace AlgorithmsPractice
             bool isExit = false;
             while (!isExit)
             {
-                Console.WriteLine("choose 1.PermutationOfString 2. Binary Search");
+                Console.WriteLine("choose 1.PermutationOfString 2. Binary Search3. insertion sort 4.Bubble Sort");
                 options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -46,6 +46,12 @@ namespace AlgorithmsPractice
                         InsertionSort insertionSort = new InsertionSort();
                         insertionSort.Sort(sortArray);
                         insertionSort.Display(sortArray);
+                        break;
+                    case 4:
+                        int[] arr = { 77, 7, 17, 34, 56, 12, 68 };
+                        BubbleSort bubbleSort = new BubbleSort();
+                        arr = bubbleSort.Sort(arr);
+                        bubbleSort.Display(arr);
                         break;
                     default:
                         Console.WriteLine("Exit");
