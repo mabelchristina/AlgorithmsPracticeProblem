@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AlgorithmsPractice
 {
-    class InsertionSort
+    class InsertionSort 
     {
         public void Sort(string[] textArr)
         {
