@@ -58,7 +58,7 @@ namespace AlgorithmsPractice
                         break;
                     case 6:
                         Anagram anagram = new Anagram();
-                        anagram.CheckAnagram("abcd", "dcbasd");
+                        anagram.CheckAnagram("abcd", "dcba");
                         break;
                     default:
                         Console.WriteLine("Exit");
