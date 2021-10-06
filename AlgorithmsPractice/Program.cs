@@ -13,7 +13,7 @@ namespace AlgorithmsPractice
                 string filepath = @"D:\my git\AlgorithmsPracticeProblem\AlgorithmsPractice\Words.txt";
                 string text = File.ReadAllText(filepath);
                 string[] textArray = text.Split(" ");
-                Console.WriteLine("1.Permutation of string\n2.Binary Search\n3.Insertion Sort\n4.Bubble Sort\n5.Merge Sort\n6.Anagram\n7.Prime Range");
+                Console.WriteLine("1.Permutation of string\n2.Binary Search\n3.Insertion Sort\n4.Bubble Sort\n5.Merge Sort\n6.Anagram\n7.Find the number\n8.Prime Range");
                 Console.Write("Enter your choice:");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -59,6 +59,11 @@ namespace AlgorithmsPractice
                     case 6:
                         Anagram anagram = new Anagram();
                         anagram.CheckAnagram("abcd", "dcba");
+                        break;
+                    case 7:
+                        Console.WriteLine("choose a number between 1-100");
+                        FindTheNumber magic = new FindTheNumber();
+                        magic.Guess();
                         break;
                     default:
                         Console.WriteLine("Exit");
